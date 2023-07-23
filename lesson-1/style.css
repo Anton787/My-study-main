@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    
+}
+
+html {
+    background-color: rgba(0, 22, 188, 0.427);
+}
+
+p {
+    max-width: 640px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.negative {
+    color: brown;
+    font-weight: 900;
+}
+
+.neutral {
+    color: rgb(8, 92, 12);
+    font-weight: 900;
+}
