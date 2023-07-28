@@ -1,0 +1,12 @@
+html {
+    background-color: rgba(205, 193, 167, 0.723);
+}
+
+p {
+    width: 700px;
+}
+
+hr {
+    color: grey;
+    height: 1px;
+}
