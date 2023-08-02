@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    background-color: rgb(36, 96, 104);
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h5  {
+    background-color: rgb(14, 73, 77);
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0px 10px 50px;
+    margin: 0px;
+}
+
+.opredel {
+    display: inline-block;
+    padding: 5px 15px 0px 15px;
+    font-size: 15px;
+}
+
+.fat {
+    font-weight: bold;
+}
+
+.sup {
+    color: white;
+    text-decoration: none;
+}
