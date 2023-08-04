@@ -2,11 +2,9 @@ li {
     display: inline-block;
     background-color: #ebebeb;
     box-sizing:border-box;
-    padding: 4px 8px;
-    height: 40px;
+    padding: 6px 8px;
     width: 62px;
     text-align: center;
-    line-height: 34px;
     font-size: 24px;
 }
 
