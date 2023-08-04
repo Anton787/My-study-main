@@ -1,0 +1,15 @@
+li {
+    display: inline-block;
+    background-color: #ebebeb;
+    box-sizing: content-box;
+    padding: 4px;
+    height: 100%;
+}
+
+.meaning, .red {
+    font-size: 24px;
+}
+
+.red {
+    color: red;
+}
