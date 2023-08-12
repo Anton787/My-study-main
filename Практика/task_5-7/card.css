@@ -1,12 +1,10 @@
 li {
     display: inline-block;
     background-color: #ebebeb;
-    box-sizing: content-box;
-    padding: 4px;
-    height: 100%;
-}
-
-.meaning, .red {
+    box-sizing:border-box;
+    padding: 6px 8px;
+    width: 62px;
+    text-align: center;
     font-size: 24px;
 }
 
