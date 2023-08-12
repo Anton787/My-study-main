@@ -1,0 +1,19 @@
+p {
+    font-size: 14px;
+}
+
+div>p {
+    color: blue;
+}
+
+div>h2 {
+    color: rgb(129, 107, 73);
+}
+
+p, h2 {
+    background-color: pink;
+}
+
+p > * > i {
+    background-color: burlywood;
+}
