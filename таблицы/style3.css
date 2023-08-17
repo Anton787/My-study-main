@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    text-align: left;
+}
+
+.first_col {
+    border-top: 3px solid black;
+}
+
+.city_table {
+    text-align: center;
+    max-width: max-content;
+}

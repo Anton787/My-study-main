@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    width: max-content;
+}
+
+tr {
+    border-bottom: 3px solid lightgray;
+}
+
+td {
+    padding: 10px;
+}

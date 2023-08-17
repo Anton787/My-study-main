@@ -1,0 +1,41 @@
+table {
+    width: 60%;
+    margin: auto;
+}
+
+caption {
+    text-align: left;
+    background-color: rgba(127, 127, 255, 0.392);
+    padding: 15px;
+}
+
+.nav {
+    text-align: center;
+    background-color: #9696cd;
+    padding: 10px;
+}
+
+a{
+    margin-right: 28px;
+}
+
+.center_column {
+    width: 50%;
+    background-color: #e5e6de;
+}
+
+.left_column, .right_column{
+    width: 25%;
+    background-color: #8cb6cd;
+}
+
+.colontitul {
+    margin: 0px;
+}
+
+.footer {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px 10px 10px;
+    background-color: #978bd1;
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c5d3f6;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 12px 20px 12px 16px;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid lightgray;
+}
+
+#name_row {
+    background-color: #6d7ae0;
+}
+
+tr {
+    background-color: white;
+}
+
+.table_date_name.top_left_radius {
+    width: 200px;
+    border-top-left-radius: 10px;
+}
+
+.top_right_radius {
+    border-top-right-radius: 10px;
+}
+
+.bottom_left_radius {
+    border-bottom-left-radius: 10px;
+}
+
+.bottom_right_radius {
+    border-bottom-right-radius: 10px;
+}
+
+tr:hover{
+    background-color: #edecfe;
+}
