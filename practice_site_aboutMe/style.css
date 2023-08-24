@@ -1,0 +1,27 @@
+header {
+    height: 6vh;
+    padding: 0px 10vw 0px 10vw;
+    text-align: center;
+}
+
+.logo > img {
+    width: 50px;
+    float: left;
+}
+
+nav {
+    margin: auto;
+}
+
+.socialNetwork_link {
+    float: right;
+}
+
+.socialNetwork_link > a {
+    width: 30px;
+    display: inline-block;
+}
+
+.socialNetwork_link > a > img {
+    width: 25px;
+}
