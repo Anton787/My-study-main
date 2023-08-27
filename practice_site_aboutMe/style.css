@@ -1,16 +1,38 @@
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
 header {
     height: 6vh;
-    padding: 0px 10vw 0px 10vw;
+    padding: 10px 10vw 0px 10vw;
     text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
 }
 
 .logo > img {
     width: 50px;
-    float: left;
 }
 
 nav {
-    margin: auto;
+    display: inline-block;
+    max-width: max-content;
+}
+
+li {
+    float: left;
+    margin-left: 25px;
 }
 
 .socialNetwork_link {
@@ -24,4 +46,47 @@ nav {
 
 .socialNetwork_link > a > img {
     width: 25px;
+}
+
+.aboutMe {
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+.aboutMe > img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.aboutMe > p, .aboutMe > h2 {
+    z-index: 2;
+    position: absolute;
+    right: 33vw;
+}
+
+.aboutMe > h2 {
+    top: 10vh;
+    font-size: 52px;
+}
+
+.aboutMe > p {
+    top: 20vh;
+    right: 33vw;
+    font-size: 34px;
+    font-weight: lighter;
+}
+
+.avatar > img {
+    border-radius: 100%;
+    width: 200px;
+    height: 190px;
+    position: absolute;
+    top: 33vh;
+    right: 48vw;
+}
+
+.article {
+    margin-top: 50px;
 }
