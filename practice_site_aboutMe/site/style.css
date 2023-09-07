@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+header.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.logo {
+  height: 60px;
+  width: 230px;
+}
+
+.logo__image {
+  height: 100%;
+}
+
+.header__nav ul{
+  display: flex;
+}
+
+.header__nav ul li {
+  margin: 0px 16px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header__nav ul li:not(:last-child)::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #353535;
+  position: absolute;
+  right: -18px;
+  top: calc(50% - 2px);
+}
+
+.header__nav a:is(:visited, :hover), .header__nav a {
+  color: black;
+}
+.social-links {
+  height: 30px;
+}
+.social-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.social-links ul li {
+  margin: 0px 8px;
+  height: inherit;
+  width: auto;
+}
+
+.social-links ul li a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.social-links__image {
+  height: 100%;
+}
+
+.hero-screen {
+  background-image: url(./assets/images/clay-banks-0MtEBTA4yw4-unsplash.jpg);
+  margin: 0px 40px;
+}

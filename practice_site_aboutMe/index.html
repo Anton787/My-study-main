@@ -3,41 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#main"><div class="logo"><img src="/practice_site_aboutMe/img/logo.png" alt="Логотип" class="logo"></div></a>
-
-        <nav>
+    <header class="container">
+        <div class="logo"><img src="/practice_site_aboutMe/img/logo.png" alt=""></div>
+        <div class="header__nav">
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#category">CATEGORY</a></li>
-                <li><a href="#pages">PAGES</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">category</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-
-        <div class="socialNetwork_link">
-            <a href="#face"><img src="/practice_site_aboutMe/img/facebook.png" alt="ЛицоКнига"></a>
-            <a href="#twit"><img src="/practice_site_aboutMe/img/twiter.png" alt="Птица"></a>
-            <a href="#in"><img src="/practice_site_aboutMe/img/LinkedIn.png" alt="LinkedIn"></a>
-            <a href="#inst"><img src="/practice_site_aboutMe/img/instagram.png" alt="INST"></a>
-            <a href="#only"><img src="/practice_site_aboutMe/img/hearth.png" alt="OnlyFans"></a>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li><a href="#"><img src="/practice_site_aboutMe/img/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="/practice_site_aboutMe/img/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="/practice_site_aboutMe/img/LinkedIn.png" alt=""></a></li>
+                <li><a href="#"><img src="/practice_site_aboutMe/img/twiter.png" alt=""></a></li>
+                <li><a href="#"><img src="/practice_site_aboutMe/img/hearth.png" alt=""></a></li>
+            </ul>
         </div>
     </header>
-
     <main>
-        <div class="aboutMe">
-            <div class="background"><img src="/practice_site_aboutMe/img/aboutMe_background.png" alt="Фон, не фен, фен зло" height="400" width="100%"></div>
-            <h2>Hello, my name is Cade Deo</h2>
-            <p>I'm a developer based in Paris, have a look at <br> my portfolio below.</p>
-            <div class="avatar"><img src="/practice_site_aboutMe/img/cool_avatar.jpg" alt="Аватарка"></div>
+        <div class="hero-screen">
+            <div class="container">
+                <div class="hero-screen__content">
+                    <h1>Hello, my names is Anton</h1>
+                    <p>
+                        I'm learning frontend-dev based in Yekaterinburg. Have a look at my portfolio below!
+                    </p>
+                </div>
+                <div class="hero-screen__links">
+                    <ul>
+                        <li><a href="#"><img src="/practice_site_aboutMe/img/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="/practice_site_aboutMe/img/instagram.png" alt=""></a></li>
+                        <li><a href="#"><img src="/practice_site_aboutMe/img/twiter.png" alt=""></a></li>
+                        <li><a href="#"><img src="/practice_site_aboutMe/img/LinkedIn.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero-screen__image">
+                <img src="/practice_site_aboutMe/img/Me.jpg" alt="">
+            </div>
         </div>
-        <div class="article">
-            <!-- <img src="/practice_site_aboutMe/img/building_for_article.jpg" alt="Здание"> -->
+        <div class="posts">
+            <div class="post-container">
+                <div class="post-header">
+                    <img src="" alt="">
+                </div>
+                <div class="post-body">
+                    <div class="post-author">
+                        By <a href="#">Code Jeo</a> in <a href="#"> Beauty, Lifestyle</a> at <a href="#">October 17, 2023</a>
+                    </div>
+                    <div class="post-overview">
+                        <h2>You work your way to creative thinking</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo dicta est ipsa, consequuntur sint aliquid cumque esse, labore, similique ea commodi a. Quod saepe animi necessitatibus voluptate alias, distinctio omnis.</p>
+                    </div>
+                </div>
+                <div class="post-footer">
+                    .
+                </div>
+            </div>
         </div>
     </main>
 </body>
