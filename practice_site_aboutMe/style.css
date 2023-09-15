@@ -1,92 +1,217 @@
 body {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.bold-700 {
+    font-weight: 700;
+}
+
+button{
+    background: rgb(215, 215, 215);
+	border: none;
+	padding: 3px 10px 3px 10px ;
+}
+
+button:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+button:active{
+    background-color: rgb(168, 168, 168);
+}
 
 a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+}
+
+.post-author>a{
+    text-decoration: underline;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px 20px;
 }
 
 header {
-    height: 6vh;
-    padding: 10px 10vw 0px 10vw;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
-    display: inline-block;
-    float: left;
+    width: 246px;
 }
 
-.logo > img {
-    width: 50px;
-}
-
-nav {
-    display: inline-block;
-    max-width: max-content;
+ul {
+    width: max-content;
+    padding: 0;
 }
 
 li {
-    float: left;
-    margin-left: 25px;
-}
-
-.socialNetwork_link {
-    float: right;
-}
-
-.socialNetwork_link > a {
-    width: 30px;
     display: inline-block;
-}
-
-.socialNetwork_link > a > img {
-    width: 25px;
-}
-
-.aboutMe {
-    text-align: center;
     position: relative;
-    height: auto;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
 }
 
-.aboutMe > img{
+.hero-screen__links ul li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.header__nav ul li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.header__nav ul li:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: black;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    right: -16px;
+    top: 40%;
 }
 
-.aboutMe > p, .aboutMe > h2 {
-    z-index: 2;
-    position: absolute;
-    right: 33vw;
+.social-links{
+    width: 246px;   
 }
 
-.aboutMe > h2 {
-    top: 10vh;
-    font-size: 52px;
+.social-links > ul li>a>img {
+    width: 20px;
 }
 
-.aboutMe > p {
-    top: 20vh;
-    right: 33vw;
-    font-size: 34px;
-    font-weight: lighter;
+.hero-screen{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/practice_site_aboutMe/img/aboutMe_background.png);
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 350px;
+    padding: 5%;
+    position: relative;
+    margin-bottom: 150px;
 }
 
-.avatar > img {
+.hero-screen__links{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-screen__image>img{
+    width: 190px;
+    height: 180px;  
     border-radius: 100%;
-    width: 200px;
-    height: 190px;
-    position: absolute;
-    top: 33vh;
-    right: 48vw;
 }
 
-.article {
-    margin-top: 50px;
+.hero-screen__image{
+    height: 150px;
+    position: absolute;
+    right: 44%;
+    top: 70%;
+}
+
+.posts {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.post-header{
+    margin-bottom: 30px;
+}
+
+.post-content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.post-overview > h2{
+    font-size: 30px;
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.readMore-line{
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+
+.share {
+    position: relative;
+    width: 137px;
+    text-align: right;
+}
+
+.share ul {
+    display: inline-block;
+    margin: 0;
+}
+
+.share ul li a img {
+    width: 20px;
+}
+
+.share>.bold-700{
+    position: absolute;
+    left: -10px;
+}
+
+.scroll-bar{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.page-now{
+    height: 9px;
+    margin-right: 10px;
+}
+
+.number{
+    font-weight: 100;
+    color: gray;
+    margin-right: 15px;
+    height: 9px;
+}
+
+.page{
+    margin-top: 2%;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #f4f8fb;
+    padding: 50px 0 50px 0;
+}
+
+.footer_social-links{
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.footer_social-links > ul li>a>img{
+    width: 20px;
+}
+
+.footer_social-links > ul li:not(:last-child){
+    margin-right: 30px;
+}
+
+footer>p{
+    max-width: max-content;
 }
