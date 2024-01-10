@@ -1,0 +1,105 @@
+@font-face{
+    font-family: "WorkSans";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/Daunku-header/assets/fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "WorkSansBold";
+    src: url(/Daunku-header/assets/fonts/WorkSans-Bold.ttf);
+}
+
+body{
+    padding-top: 57px;
+    background-color: #394656;
+    color: #FFF;
+    font-family: WorkSans, Arial;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.logo > h3{
+    color: #FFF;
+    text-align: center;
+    font-family: WorkSans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:0 0 0 4px;
+}
+
+ul{
+    margin-left: -100px;
+    padding: 0;
+}
+
+li{
+    display: inline;
+}
+
+li:not(:last-child){
+    margin-right: 68px;
+}
+
+li>span{
+    color: #FFF;
+    text-align: center;
+    font-family: WorkSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.current{
+    text-align: center;
+    font-family: WorkSansBold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    background: var(--gradient2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.quantity-in-basket > span{
+    color: #2D3949;
+    text-align: center;
+    font-family: WorkSans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.quantity-in-basket{
+    position: absolute;
+    right: 65px;
+}
+
+.quantity-in-basket > span{
+    position: relative;
+    top: -6px;
+    left: -18px;
+}

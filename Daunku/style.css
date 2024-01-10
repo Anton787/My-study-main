@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "WorkSans";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/assets/fonts/WorkSans-Medium.ttf");
+}
+
+body{
+    font-size: 16px;
+    font-family: "WorkSans";
+}
+
+a{
+    text-decoration: none;
+}
+
+.link--grey{
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 1.5rem;
+}
+
+.link--icon{
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.best-product{
+    width: 96%;
+    margin: auto;
+    margin-top: 25vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.best-product__text{
+    width: 365px;
+    margin-right: 25px;
+}
+
+.link--url{
+    display: flex;
+    height: max-content;
+    align-items: center;
+}
+
+.best-product__cards{
+    width: 100%;
+    max-width: 1051px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-product__card{
+    display: flex;
+    align-items: flex-end;
+    border-radius: 50px;
+    background: #C1D0E4;
+    width: 329px;
+    height: 510px;
+}
+
+.best-product__card-image > img{
+    position: absolute;
+    top: 95px;
+}
+
+.best-product__card-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    padding: 26px 38px;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px rgba(221, 218, 218, 0.25);
+}
+
+.best-product__card-description > h4{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.best-product__card-description > p{
+    margin: 14px 0 0 0;
+    color: #081323;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.price > p {
+    font-size: 2rem;
+}
+
+.price > img{
+    width: 64px;
+    height: 64px;
+}

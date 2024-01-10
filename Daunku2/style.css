@@ -1,0 +1,111 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+}
+
+li > img{
+    margin-right: 24px;
+}
+
+.reference{
+    text-align: center;
+}
+
+.reference-slogan h2{
+    color: var(--font, #081323);
+    font-family: Work Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.reference-slogan p{
+    color: var(--Gray-2, #4F4F4F);
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right_img{
+    height: 950px;
+}
+
+.example-room{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.example-room img {
+    width: 700px;
+}
+
+.left-column{
+    margin: 0 25px 25px 0;
+}
+
+.instruction-courtship{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.illustration-instruction{
+    margin-top: 7%;
+}
+
+.text-instruction{
+    width: 585px;
+}
+
+.instruction-slogan h2{
+    color: var(--font, #081323);
+    font-family: Work Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 28px 0;
+}
+
+.instruction-slogan p{
+    color: var(--Gray-2, #4F4F4F);
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 82px 0;
+}
+
+.text-how-care h4{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    
+}
+
+.text-how-care p{
+    color: var(--Gray-2, #4F4F4F);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 8px 0;
+}
+
+.text-how-care li:not(:last-child){
+    margin-bottom: 32px;
+}
