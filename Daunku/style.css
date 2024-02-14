@@ -2,7 +2,133 @@
     font-family: "WorkSans";
     font-weight: 500;
     font-style: normal;
-    src: url("/assets/fonts/WorkSans-Medium.ttf");
+    src: url("/Daunku/assets/fonts/WorkSans-Medium.ttf");
+}
+
+@font-face{
+    font-family: "WorkSans";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/Daunku/assets/fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "WorkSansBold";
+    src: url(/Daunku-header/assets/fonts/WorkSans-Bold.ttf);
+}
+
+
+@media only screen and (max-width: 412px) {
+        body {max-width: 312px;}
+        header {max-width: 312px;}
+        main {max-width: 312px;}
+        .best-product__text {max-width: 100px;}
+        .best-product__card {max-width: 50px;}
+    }
+
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding-top: 57px;
+    background-color: #394656;
+    color: #FFF;
+    font-family: WorkSans, Arial;
+    background-image: url(/Daunku/assets/images/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png);
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.logo > h3{
+    color: #FFF;
+    text-align: center;
+    font-family: WorkSans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:0 0 0 4px;
+}
+
+ul.nav{
+    margin-left: -100px;
+    padding: 0;
+}
+
+.nav > li{
+    display: inline;
+}
+
+.nav > li:not(:last-child){
+    margin-right: 68px;
+}
+
+li>span{
+    color: #FFF;
+    text-align: center;
+    font-family: WorkSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.current{
+    text-align: center;
+    font-family: WorkSansBold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    background: var(--gradient2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.quantity-in-basket > span{
+    color: #2D3949;
+    text-align: center;
+    font-family: WorkSans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.quantity-in-basket{
+    position: absolute;
+    right: 65px;
+}
+
+.quantity-in-basket > span{
+    position: relative;
+    top: -6px;
+    left: -18px;
 }
 
 body{
@@ -68,7 +194,7 @@ h3{
 
 .best-product__card-image > img{
     position: absolute;
-    top: 95px;
+    top: 23vh;
 }
 
 .best-product__card-description{
@@ -112,4 +238,238 @@ h3{
 .price > img{
     width: 64px;
     height: 64px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+}
+
+li > img{
+    margin-right: 24px;
+}
+
+.reference{
+    text-align: center;
+}
+
+.reference-slogan h2{
+    color: var(--font, #081323);
+    font-family: WorkSans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.reference-slogan p{
+    color: var(--Gray-2, #4F4F4F);
+    font-family: WorkSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right_img{
+    height: 950px;
+}
+
+.example-room{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.example-room img {
+    width: 700px;
+}
+
+.left-column{
+    margin: 0 25px 25px 0;
+}
+
+.instruction-courtship{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.illustration-instruction{
+    margin-top: 7%;
+}
+
+.text-instruction{
+    width: 585px;
+}
+
+.instruction-slogan h2{
+    color: var(--font, #081323);
+    font-family: WorkSans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 28px 0;
+}
+
+.instruction-slogan p{
+    color: var(--Gray-2, #4F4F4F);
+    font-family: WorkSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 82px 0;
+}
+
+.text-how-care h4{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    
+}
+
+.text-how-care p{
+    color: var(--Gray-2, #4F4F4F);
+    font-family: WorkSans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 8px 0;
+}
+
+.text-how-care li:not(:last-child){
+    margin-bottom: 32px;
+}
+
+footer{
+    display: flex;
+    padding: 120px 97px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    background: linear-gradient(94deg, #566270 0.51%, #283444 100%);
+}
+
+.footer-content{
+    display: inline-flex;
+    align-items: center;
+    gap: 122px;
+    width: 90vw;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter > h3{
+    color: #FFF;
+    font-family: WorkSans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+    margin-bottom: 25px; 
+    margin-left: 10px;
+}
+
+.email{
+    display: flex;
+    width: 463px;
+    padding: 24px 30px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(10px);
+    content: "Enter your email";
+}
+
+.email::-webkit-input-placeholder {
+    color: #FFF;
+    font-family: WorkSans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.email:focus{
+    outline: 0;
+    outline-offset: 0;
+}
+
+.sub{
+    max-width: max-content;
+    position: relative;
+    top: -54px;
+    left: 400px;
+    display: inline-flex;
+    padding: 12px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 50px;
+    background: var(--gradient2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%)); 
+}
+
+.useless-links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main{
+    margin-bottom: 209px;
+}
+
+.useless-links > ul > li{
+    margin-bottom: 17px;
+}
+
+.footer-links > li:not(:last-child){
+    margin-bottom: 17px;
+}
+
+.footer-links > li > a{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+
+.useless-links > div > h4{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+}
+
+.address > p{
+    color: #FFF;
+    font-size: 16.823px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 25.235px */
 }
