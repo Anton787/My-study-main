@@ -1,0 +1,50 @@
+body{
+    background-color: #1E1E1E;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 6% 5% 0 10%;
+    background-image: url("/js/dota/1682081480_new-map-dota-7-33-update.png");
+    height: 1000px;
+    width: 1000px;
+    border-radius: 30px;
+}
+
+.place{
+    height: 500px;
+    width: 500px;
+}
+
+.description-main{
+    position: relative;
+    margin-top: 120px;
+}
+
+.description{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #474747;
+    border-radius: 15px;
+    width: 600px;
+    height: 1100px;
+}
+
+.description > img{
+    width: 600px;
+    border-radius: 10px;
+}
+
+.www.description{
+    display: block;
+}
