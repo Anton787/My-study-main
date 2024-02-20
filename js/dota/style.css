@@ -1,6 +1,16 @@
 body{
     background-color: #1E1E1E;
     overflow: hidden;
+    background-image: url("/js/dota/wallpaperflare.com_wallpaper.jpg");
+}
+
+header{
+    width: 100vw;
+}
+
+.logo{
+    margin: 2% auto 0 ;
+    max-width: max-content;
 }
 
 .content{
@@ -8,12 +18,17 @@ body{
     flex-direction: row;
 }
 
+.to-left.content{
+    animation: left 1,5s forwards;
+}
+
 .image{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 6% 5% 0 10%;
+    margin: 4% auto 0;
     background-image: url("/js/dota/1682081480_new-map-dota-7-33-update.png");
+    background-size: 100%;
     height: 1000px;
     width: 1000px;
     border-radius: 30px;
@@ -26,7 +41,6 @@ body{
 
 .description-main{
     position: relative;
-    margin-top: 120px;
 }
 
 .description{
@@ -34,7 +48,7 @@ body{
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: #474747;
+    background-color: #333232e1;
     border-radius: 15px;
     width: 600px;
     height: 1100px;
@@ -45,6 +59,75 @@ body{
     border-radius: 10px;
 }
 
-.www.description{
+.description > img{
+    width: 600px;
+    border-radius: 10px;
+}
+
+.www.description > img{
+    animation: ani-img 3s forwards;
+}
+
+.ww.description > img{
+    animation: ww-img 1.5s forwards;
+}
+
+.description > p {
+    margin: 10% 5% 0 5%;
+}
+
+.www.description > p {
+    animation: ani-text 3s forwards;
+}
+
+.ww.description > p {
+    animation: ww-text 1.5s forwards;
+}
+
+.ww.description{
     display: block;
 }
+
+.www.description{
+    display: block;
+    animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+        width: 100px;
+    }
+    100% {opacity: 1; width: 600px; height: 1100px;}
+  }
+
+@keyframes ani-img {
+    0% {opacity: 0;}
+    70%{opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes ani-text {
+    0% {opacity: 0;}
+    70%{opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes ww-img {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes ww-text {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.to-left.content{
+    animation: left 2.5s forwards;
+}
+
+@keyframes left {
+    0% {width: 100%;}
+    100% {width: 60%;}
+  }
