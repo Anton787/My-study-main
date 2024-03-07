@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <style>
+        .hide {
+            width: 400px;
+            height: 200px;
+            border-radius: 16px;
+            background-color: #e8e8e8;
+            position: relative;
+
+        }
+        .hide::after {
+            content: 'Loading...';
+            display: block;
+            clear: both;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hide .content {
+            visibility: hidden;
+            opacity: 0;
+        }
+        .content:not(.hide) {
+            visibility: visible;
+            opacity: 1;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p id="guesses_left"></p>
-    <input type="text" placeholder="Введите число" id="number">
-    <button id="guess">Попытка </button>
-    <button id="new">Новая игра</button>
+    <div class="game hide">
+        <div class="content">
+            <p id="guesses_left"></p>
+            <input type="text" placeholder="Введите число" id="number">
+            <button id="guess">Попытка </button>
+            <button id="new">Новая игра</button>
+        </div>
+    </div>
+
+
     <script src="/js/async/index.js" defer></script>
 </body>
 </html>

@@ -1,17 +1,33 @@
 const xml = new XMLHttpRequest();
+const input = document.getElementById("number");
+const guess = document.getElementById("guess");
+const new_round = document.getElementById("new");
+const p = document.querySelector("p");
+const game = document.querySelector(".game.hide");
 let random_number;
+let remained = 10;
 
-xml.open("GET", 'https://www.random.org/integers/?num=1&min=1&max=100&col=1&base=10&format=plain&rnd=new');
+const getRandom = new Promise((resolve, reject) => {
+  xml.open("GET", 'https://www.random.org/integers/?num=1&min=1&max=100&col=1&base=10&format=plain&rnd=new');
 
-xml.send();
+  xml.send();
+  // resolve onload
+  xml.addEventListener('load', () => {
+    if (xml.status === 200) {
+      resolve(xml.response);
+    } else {
+      reject(xml.status);
+    }
+  });
+});
 
-xml.onload = function () {
-  // const p = document.createElement("p")
-  // p.innerHTML = xml.response;
-  // document.querySelector("body").append(p);
-  random_number = xml.response.slice(0, -1);
-  console.log(xml.status, xml.response, random_number)
-}
+getRandom.then((response) => {
+  random_number = Number(response);
+  game.classList.remove("hide");
+  console.log(random_number);
+}).catch((status) => {
+  console.log(status);
+});
 
 function try_guess(){
   let number = input.value;
@@ -52,12 +68,9 @@ function new_number() {
   remained = 10
   p.innerText = "Осталось " + remained + " попыток";
 }
-let remained = 10;
-const p = document.querySelector("p");
+
 p.innerText = "Осталось " + remained + " попыток";
-const input = document.getElementById("number");
-const guess = document.getElementById("guess");
-const new_round = document.getElementById("new");
+
 console.log(random_number);
 
 guess.addEventListener("click", try_guess);
