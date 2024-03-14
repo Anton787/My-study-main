@@ -1,0 +1,27 @@
+header{
+    width: 100vw;
+    margin-bottom: 3%;
+}
+
+h1{
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+main{
+    width: 100vw;
+    text-align: center;
+}
+
+.content{
+    background-color: blueviolet;
+    width: 50%;
+    min-height: 300px;  
+    margin: 0 auto 2%;
+}
+
+footer{
+    width: 100vw;
+    margin-top: 3%;
+    text-align: center;
+}
