@@ -8,6 +8,10 @@ h1{
     margin: 0 auto;
 }
 
+h3{
+    color: rgb(249, 158, 0);
+}
+
 main{
     width: 100vw;
     text-align: center;
@@ -15,6 +19,15 @@ main{
 
 .content{
     background-color: blueviolet;
+    width: 50%;
+    min-height: 300px;  
+    margin: 0 auto 2%;
+}
+
+.loading{
+    display: none;
+    z-index: 100;
+    background-color: grey;
     width: 50%;
     min-height: 300px;  
     margin: 0 auto 2%;
