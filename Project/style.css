@@ -12,7 +12,7 @@ body{
 }
 
 main{
-    padding: 0 48px 0 48px;
+    padding: 50px 48px 50px 48px;
 }
 
 ul{
@@ -30,7 +30,11 @@ a{
     color: #F0873C;
 }
 
-body
+h1{
+    margin: 0;
+    font-size: 64px;
+}
+
 
 /* Шапка */
 header{
@@ -105,4 +109,14 @@ header{
     color: #F0873C;
     text-decoration: underline;
     text-decoration-skip-ink: none;
+}
+
+
+/* Main */
+
+.accelerator{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
 }
