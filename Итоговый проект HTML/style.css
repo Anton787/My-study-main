@@ -1,0 +1,108 @@
+/* Стандартные стили */
+nav{
+    display: flex;
+    align-items: last baseline;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    color: #163152;
+    font-size: 16px;
+}
+
+main{
+    padding: 0 48px 0 48px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    line-height: 162%;
+}
+
+a{
+    text-decoration: none;
+    color: #F0873C;
+}
+
+body
+
+/* Шапка */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px 40px 48px;
+    background-color: #F0EEFF;
+}
+
+.left__wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.user{
+    display: flex;
+    align-items: last baseline;
+}
+
+
+/* Стили кнопки профиля */
+.profile-btn{
+    display: flex;
+    border: 1px solid rgba(22, 49, 82, 0.3);
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-btn:hover path:first-child {
+    fill: #6818D0;
+}
+
+.profile-btn:focus{
+    border-color: #163152;
+}  
+
+.profile-btn:active{
+    border-color: rgba(8, 9, 28, 0.05);
+    background-color: #6818D0;
+}  
+
+.profile-btn:active path:first-child{
+    fill: #fff;
+}
+
+.profile-btn:active path:last-child{
+    fill: #9E6BE1;
+} 
+
+/* Стили меню */
+
+.header-nav{
+    display: flex;
+    gap: 30px;
+}
+
+.header-nav > li:hover{
+    color: #424E5C;
+}
+
+.header-nav > li:focus{
+    color: #6818D0;
+}
+
+.header-nav > li:active{
+    color: #F0873C;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
