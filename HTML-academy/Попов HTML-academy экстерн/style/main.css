@@ -1,0 +1,231 @@
+.nav-content{
+    width: 740px;
+    padding: 10px 30px 10px 30px;
+    gap: 30px;
+}
+
+.nav-content > li:hover{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.contant-number{
+    width: 275px;
+}
+
+.promo-block{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url('../assets/img/promo.png');
+    background-size: 100% 100%;
+    padding: 125px 105px 25px 105px;
+    height: 640px;
+}
+
+.promo-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/form.png);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 90px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 40%;
+}
+
+.form-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.how-call{
+    width: calc(100% - 47px);
+    height: 30px;
+    background-color: #FFEBCD;
+    border: 1px solid #FBD2B4;
+    border-radius: 5px;
+    padding: 18px 15px 18px 30px;
+    margin-bottom: 30px;
+}
+
+.tel-email{
+    width: 199px;
+    height: 30px;
+    background-color: #FFEBCD;
+    border: 1px solid #FBD2B4;
+    border-radius: 5px;
+    padding: 18px 15px 18px 30px;
+    margin-right: 30px;
+}
+
+.educational{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 90px 120px 90px 120px;
+}
+
+.educational-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.description-educational, .educational-program{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.educational-list{
+    position: relative;
+}
+
+.educational-list > .planet{
+    list-style-image: url(../assets/img/planet.svg);
+}
+
+.educational-list > .bowl{
+    list-style-image: url(../assets/img/bowl.svg);
+}
+
+.educational-list > .safety{
+    list-style-image: url(../assets/img/safety.svg);
+}
+
+.educational-list > .tableware{
+    list-style-image: url(../assets/img/tableware.svg);
+}
+
+.educational-list::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: 5px;
+    background-color: #FBD2B4;
+    top: 112px;
+}
+
+.educational-list > li{
+    width: 300px;
+}
+
+.educational-list > li::before{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #D2691E;
+}
+
+.master-class-program{
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.master-class-program > img{
+    padding-top: 5px;
+}
+
+.contact{
+    display: flex;
+    height: 438px;
+    gap: 135px;
+    padding: 60px 120px 40px 120px;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+
+.communication-method{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.communication-method > ul{
+    flex-direction: column;
+    gap: 40px;
+}
+
+.communication-method-content{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+
+.map{
+    margin: auto 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 120px 30px 120px;
+    gap: 30px;
+}
+
+.footer-nav{
+    margin-left: 60px;
+}
+
+.footer-nav > li:hover{
+    border-bottom: 1px solid #513833;
+}
+
+.footer-nav > .contant-number {
+    width: max-content;
+    text-align: right;
+}
+
+.social-network{
+    display: flex;
+    justify-content: center;
+}
+
+.social-network > ul{
+    gap: 15px;
+}
+
+.social-network-link > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D7D4D4;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.social-network-link > li:hover{
+    border: 1px solid #513833;
+}
