@@ -3,6 +3,17 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
+const store = useStore();
+
+store.dispatch('A_GET_LOCALSTORAGE');
+
+const name = computed(() => {
+  return store.getters.GET_NAME;
+});
+
 
 </script>
 

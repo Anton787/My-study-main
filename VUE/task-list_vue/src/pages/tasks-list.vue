@@ -57,6 +57,12 @@ import CompliteTask from '../components/complite-task.vue';
 import CancelTask from '../components/cancel-task.vue';
 import { useRouter, useRoute } from 'vue-router';
 import { ref, computed } from 'vue';
+import { useStore } from 'vuex';
+
+const store = useStore();
+const name = computed(() => {
+  return store.state.name;
+})
 
 const router = useRouter();
 const route = useRoute();
@@ -107,25 +113,23 @@ function AddPost (x){
   })
 }
 
-localStorage.clear()
-
 function Delet(i,m){
   alert()
   if(localStorage.getItem("id") >= 1){
-    let id = localStorage.getItem("id");
-    id = Number(id) + 1;
-    localStorage.id = id;
-    let keyTitle = 'title' + String(id);
-    let keytext = 'text' + String(id);
-    let keyType = 'type' + String(id);
-    localStorage.setItem(keyTitle, m.slice(i,i+1)[0].title)
-    localStorage.setItem(keytext, m.slice(i,i+1)[0].text)
-    localStorage.setItem(keyType, m.slice(i,i+1)[0].type)
+    // let id = localStorage.getItem("id");
+    // id = Number(id) + 1;
+    // localStorage.id = id;
+    // let keyTitle = 'title' + String(id);
+    // let keytext = 'text' + String(id);
+    // let keyType = 'type' + String(id);
+    // localStorage.setItem(keyTitle, m.slice(i,i+1)[0].title)
+    // localStorage.setItem(keytext, m.slice(i,i+1)[0].text)
+    // localStorage.setItem(keyType, m.slice(i,i+1)[0].type)
   } else{
-    localStorage.setItem("id", 1);
-    localStorage.setItem("type1", m.slice(i,i+1)[0].type)
-    localStorage.setItem("title1", m.slice(i,i+1)[0].title)
-    localStorage.setItem("text1", m.slice(i,i+1)[0].text)
+    // localStorage.setItem("id", 1);
+    // localStorage.setItem("type1", m.slice(i,i+1)[0].type)
+    // localStorage.setItem("title1", m.slice(i,i+1)[0].title)
+    // localStorage.setItem("text1", m.slice(i,i+1)[0].text)
   }
   m.splice(i,1)
 }

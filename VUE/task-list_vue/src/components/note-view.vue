@@ -13,7 +13,6 @@
 
 <script setup>
 import IconBtn from './icon-btn.vue';
-import { defineEmits } from 'vue';
 
 const emit = defineEmits('Delet','Complite', 'Cancel', 'Page')
 
