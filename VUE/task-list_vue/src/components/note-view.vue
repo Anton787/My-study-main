@@ -6,6 +6,7 @@
             <icon-btn text="X" @click="Delet"></icon-btn>
             <icon-btn text="Cancel" @click="Cancel"></icon-btn>
             <icon-btn text="Complite" @click="Complite"></icon-btn>
+            <icon-btn text="TaskPage" @click="Page"></icon-btn>
         </div>
     </div>
 </template>
@@ -14,8 +15,11 @@
 import IconBtn from './icon-btn.vue';
 import { defineEmits } from 'vue';
 
-const emit = defineEmits('Delet','Complite', 'Cancel')
+const emit = defineEmits('Delet','Complite', 'Cancel', 'Page')
 
+function Page(){
+    emit('Page')
+}
 function Delet(){
     emit('Delet')
 }
@@ -38,7 +42,7 @@ const props = defineProps({
 .viev-note{
     display: flex;
     flex-direction: column;
-    width: 260px;
+    width: 400px;
     gap: 20px;
     background-color: #6e6e81;
     border-radius: 5px;
