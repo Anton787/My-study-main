@@ -9,6 +9,7 @@ import { useStore } from 'vuex';
 const store = useStore();
 
 store.dispatch('A_GET_LOCALSTORAGE');
+// store.dispatch('A_GET_LS'); SLOMAL -_-
 
 const name = computed(() => {
   return store.getters.GET_NAME;

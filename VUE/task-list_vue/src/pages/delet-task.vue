@@ -35,43 +35,25 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import DeletPost from '../components/delet-post.vue';
 import DeletComplite from '../components/delet-complite.vue';
 import DeletCancel from '../components/delet-cancel.vue';
+import { useStore } from 'vuex';
 
-let posts = ref([])
+const store = useStore();
 
-let complitePosts = ref([])
+let posts = computed(() => {
+    return store.state.now;
+});
 
-let cancelTask = ref([])
+let complitePosts = computed(() => {
+    return store.state.complited;
+});
 
-let count_tasks = localStorage.getItem("id");
-for(let i = 1; i <= count_tasks; i++){
-    let Tasktype = 'type' + i;
-    let Tasktext = 'text' + i;
-    let Tasktitle = 'title' + i;
-    if(localStorage.getItem(Tasktype) == 'Now'){
-        posts.value.push({
-            type: 'Now',
-            title: localStorage.getItem(Tasktitle),
-            text: localStorage.getItem(Tasktext)
-        });
-    }else if(localStorage.getItem(Tasktype) == 'Complite'){
-        complitePosts.value.push({
-            type: 'Now',
-            title: localStorage.getItem(Tasktitle),
-            text: localStorage.getItem(Tasktext)
-        });
-    }else{
-        cancelTask.value.push({
-            type: 'Now',
-            title: localStorage.getItem(Tasktitle),
-            text: localStorage.getItem(Tasktext)
-        });
-    }
-}
-console.log(posts);
+let cancelTask = computed(() => {
+    return store.state.cancel;
+});
 
 </script>
 

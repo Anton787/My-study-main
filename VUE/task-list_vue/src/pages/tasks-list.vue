@@ -32,7 +32,8 @@
             :key="i"
             :title="post.title"
             :text="post.text"
-            @Delet="Delet(i,complitePosts)"></complite-task>
+            @Delet="Delet(i,complitePosts)"
+            @Return="Return(i, complitePosts)"></complite-task>
       </div>
     </div>
     <div class="view-note">
@@ -43,7 +44,9 @@
             :key="i"
             :title="post.title"
             :text="post.text"
-            @Delet="Delet(i, cancelTask)"></cancel-task>
+            @Delet="Delet(i, cancelTask)"
+            @Return="Return(i, cancelTask)"
+            @Complite="Swap_status(i)"></cancel-task>
       </div>
     </div>
   </main>
@@ -60,9 +63,9 @@ import { ref, computed } from 'vue';
 import { useStore } from 'vuex';
 
 const store = useStore();
-const name = computed(() => {
-  return store.state.name;
-})
+// const name = computed(() => {
+//   return store.state.name;
+// })
 
 const router = useRouter();
 const route = useRoute();
@@ -81,84 +84,95 @@ function Page(x,i){
   });
 }
 
-let posts = ref([
-  {
-    type: "Now",
-    title: "First",
-    text: "FirstText"
-  },
-  {
-    type: "Now",
-    title: "Second",
-    text: "SecondText"
-  }])
+let posts = computed(() => {
+    return store.state.now;
+});
 
-  let complitePosts = ref([{
-    type: "Complite",
-    title: "Second",
-    text: "SecondText"
-  }])
+  let complitePosts = computed(() => {
+    return store.state.complited;
+});
 
-  let cancelTask = ref([{
-    type: "Cancel",
-    title: "Second",
-    text: "SecondText"
-  }])
+  let cancelTask = computed(() => {
+    return store.state.cancel;
+});
 
 function AddPost (x){
-  posts.value.push({
+  const newTask = {
     type: "Now",
     title: x.title,
     text: x.text,
-  })
+  }
+  store.dispatch('A_SET_LOCALSTORAGE', newTask );
 }
 
 function Delet(i,m){
-  alert()
-  if(localStorage.getItem("id") >= 1){
-    // let id = localStorage.getItem("id");
-    // id = Number(id) + 1;
-    // localStorage.id = id;
-    // let keyTitle = 'title' + String(id);
-    // let keytext = 'text' + String(id);
-    // let keyType = 'type' + String(id);
-    // localStorage.setItem(keyTitle, m.slice(i,i+1)[0].title)
-    // localStorage.setItem(keytext, m.slice(i,i+1)[0].text)
-    // localStorage.setItem(keyType, m.slice(i,i+1)[0].type)
-  } else{
-    // localStorage.setItem("id", 1);
-    // localStorage.setItem("type1", m.slice(i,i+1)[0].type)
-    // localStorage.setItem("title1", m.slice(i,i+1)[0].title)
-    // localStorage.setItem("text1", m.slice(i,i+1)[0].text)
+  alert();
+  if(store.state.count >= 1){
+    let count = store.state.count + 1;
+  //   let id = localStorage.getItem("id");
+  //   id = Number(id) + 1;
+  //   localStorage.id = id;
+  //   let keyTitle = 'title' + String(id);
+  //   let keytext = 'text' + String(id);
+  //   let keyType = 'type' + String(id);
+  //   localStorage.setItem(keyTitle, m.slice(i,i+1)[0].title)
+  //   localStorage.setItem(keytext, m.slice(i,i+1)[0].text)
+  //   localStorage.setItem(keyType, m.slice(i,i+1)[0].type)
+  // } else{
+  //   localStorage.setItem("id", 1);
+  //   localStorage.setItem("type1", m.slice(i,i+1)[0].type)
+  //   localStorage.setItem("title1", m.slice(i,i+1)[0].title)
+  //   localStorage.setItem("text1", m.slice(i,i+1)[0].text)
   }
-  m.splice(i,1)
+  m.splice(i,1);
 }
 
 function Complite(i){
   let a = posts.value.slice(i,i+1)
-  console.log(a[0].title)
-  complitePosts.value.push({
+  const changeTask = {
     type: "Complitle",
     title: a[0].title,
-    text: a[0].text
-  })
-  posts.value.splice(i,1)
+    text: a[0].text,
+    id: i
+  }
+  store.dispatch('A_CHANGE_TASK_COMPLITED', changeTask);
 }
 
 function Cancel(i){
   let a = posts.value.slice(i,i+1)
-  console.log(a[0].title)
-  cancelTask.value.push({
+  const changeTask = {
     type: "Cancel",
     title: a[0].title,
-    text: a[0].text
-  })
-  posts.value.splice(i,1)
+    text: a[0].text,
+    id: i
+  }
+  store.dispatch('A_CHANGE_TASK_CANCEL', changeTask);
 }
 
-if(delet){Delet(delet,posts.value)}
+function Return(i, type){
+  let a = type.slice(i,i+1);
+  const changeTask = {
+    type: a[0].type,
+    title: a[0].title,
+    text: a[0].text,
+    id: i
+  }
+  store.dispatch('A_RETURN_TASK', changeTask);
+}
 
-console.log(posts.value);
+function Swap_status(i){
+  let a = cancelTask.value.slice(i,i+1);
+  const changeTask = {
+    type: a[0].type,
+    title: a[0].title,
+    text: a[0].text,
+    id: i
+  }
+  store.dispatch('A_SWAP_STATUS', changeTask)
+}
+
+if(delet){Delet(delet.posts.value)}
+
 </script>
 
 <style scoped>
