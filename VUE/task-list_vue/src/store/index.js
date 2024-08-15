@@ -76,10 +76,10 @@ const store = new createStore({
             }
             commit('M_CHANGE_NOW', payload);
         },
-        // A_GET_LS({ commit }){
-        //     const data = JSON.parse(localStorage.now);
-        //     commit('M_SET_NOW', data);
-        // },                                                   ПОСЛЕ ЧИСТКИ LS ЭТО СЛОМАЛОСЬ ):)
+        A_GET_LS({ commit }){
+            const data = JSON.parse(localStorage.now);
+            commit('M_SET_NOW', data);
+        },                                                   
         A_CHANGE_TASK_COMPLITED({ commit }, payload){
             if(localStorage?.complited){
                 const data = JSON.parse(localStorage.complited);
@@ -159,7 +159,3 @@ const store = new createStore({
 });
 
 export default store;
-
-
-
-                    // ПОСЛЕ ОЧИСТКИ LS СЛОМАЛОСЬ ДОБАВЛЕНИЕ... Я НЕ ПОНИМАТЬ WHY, PROBABLY ПОТОМУ ЧТО A_GET_LS DEAD? :(

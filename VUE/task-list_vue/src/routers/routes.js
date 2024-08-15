@@ -3,12 +3,13 @@ import HomePage from '../pages/home-page.vue';
 import TasksPage from '../pages/tasks-list.vue';
 import PageTask from '../pages/task-page.vue';
 import DeletTask from '../pages/delet-task.vue';
+import StrapiTest from '../pages/strapi-test.vue';
 
 const routes = [
     {
         path: '/',
         name: 'Home',
-        component: HomePage,
+        component: StrapiTest,
     },
     {
         path: '/task',

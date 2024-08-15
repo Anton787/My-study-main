@@ -33,7 +33,9 @@
             :title="post.title"
             :text="post.text"
             @Delet="Delet(i,complitePosts)"
-            @Return="Return(i, complitePosts)"></complite-task>
+            @Return="Return(i, complitePosts)"
+            @Cancel="Swap_status(i, complitePosts)"
+            ></complite-task>
       </div>
     </div>
     <div class="view-note">
@@ -46,7 +48,7 @@
             :text="post.text"
             @Delet="Delet(i, cancelTask)"
             @Return="Return(i, cancelTask)"
-            @Complite="Swap_status(i)"></cancel-task>
+            @Complite="Swap_status(i, cancelTask)"></cancel-task>
       </div>
     </div>
   </main>
@@ -126,6 +128,8 @@ function Delet(i,m){
   }
   m.splice(i,1);
 }
+// ДОДЕЛАТЬ
+
 
 function Complite(i){
   let a = posts.value.slice(i,i+1)
@@ -160,8 +164,8 @@ function Return(i, type){
   store.dispatch('A_RETURN_TASK', changeTask);
 }
 
-function Swap_status(i){
-  let a = cancelTask.value.slice(i,i+1);
+function Swap_status(i, type){
+  let a = type.slice(i,i+1);
   const changeTask = {
     type: a[0].type,
     title: a[0].title,
