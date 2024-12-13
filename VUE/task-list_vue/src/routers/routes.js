@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-routers'
 import HomePage from '../pages/home-page.vue';
 import TasksPage from '../pages/tasks-list.vue';
 import PageTask from '../pages/task-page.vue';

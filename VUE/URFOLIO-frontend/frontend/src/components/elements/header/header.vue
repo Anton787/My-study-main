@@ -2,7 +2,7 @@
     <header>
         <router-link to="/"> 
             <div class="logo">
-                <img src="" alt="Логотип сайта">
+                <img src="/src/assets/img/logo/logo.png" alt="Логотип сайта">
             </div>
         </router-link>
         <div class="interact">
@@ -17,4 +17,8 @@
 </script>
 
 <style scoped>
+header{
+    display: flex;
+    justify-content: space-around;
+}
 </style>
