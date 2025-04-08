@@ -1,0 +1,12 @@
+.hero {
+  background-color: green;
+}
+
+.enemy {
+  background-color: brown;
+  color: whitesmoke;
+}
+
+.NPC {
+  background-color: rgb(175, 169, 169);
+}
